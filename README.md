@@ -135,14 +135,16 @@ Flask Backend
           │
           ▼
       User 
+      '''text
 
-### How to Run
+## ⚙️ How to Run
 
 ### 1. Clone the repository
 
-'''bash
+```bash
 git clone https://github.com/amantechy/ShopIQ-AI.git
 cd ShopIQ-AI
+```
 
 ### Set up the backend
 
