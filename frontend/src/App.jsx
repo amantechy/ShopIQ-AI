@@ -6,6 +6,7 @@ import AIRecommendation from "./components/AIRecommendation";
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [products, setProducts] = useState([]);
+  const [availableProducts, setAvailableProducts] = useState([]);
 
   const handleSearch = async (product) => {
     setSearchQuery(product);
@@ -16,6 +17,11 @@ function App() {
       );
 
       const data = await response.json();
+      const uniqueProducts = [
+         ...new Set(data.map((item) => item.Product)),
+      ];
+
+      setAvailableProducts(uniqueProducts);
 
       const searchText = product
         .toLowerCase()
@@ -82,10 +88,51 @@ function App() {
       <SearchBar onSearch={handleSearch} />
 
       {searchQuery && (
-        <h2>
-          Results for: <strong>{searchQuery}</strong>
-        </h2>
-      )}
+  <h2>
+    Results for: <strong>{searchQuery}</strong>
+  </h2>
+)}
+{searchQuery && products.length === 0 && (
+  <div
+    style={{
+      margin: "30px auto",
+      padding: "25px",
+      width: "80%",
+      maxWidth: "700px",
+      border: "1px solid #555",
+      borderRadius: "12px",
+    }}
+  >
+    <h2>❌ Product Not Found</h2>
+
+    <p>
+      We couldn't find{" "}
+      <strong>"{searchQuery}"</strong>.
+    </p>
+
+    <h3>🛍️ Available Products</h3>
+
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "10px",
+        flexWrap: "wrap",
+      }}
+    >
+      {availableProducts.map((product) => (
+        <button
+          key={product}
+          onClick={() => handleSearch(product)}
+        >
+          {product}
+        </button>
+      ))}
+    </div>
+  </div>
+)}
+
+   
 
       <div
         style={{
