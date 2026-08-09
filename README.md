@@ -10,7 +10,7 @@ ShopIQ then uses a scoring algorithm to identify the best overall option and Gem
 
 ---
 
-## 🚀 Problem
+##  Problem
 
 Online shoppers often have to open multiple shopping platforms to compare:
 
@@ -23,7 +23,7 @@ This takes time and makes it difficult to decide which option provides the best 
 
 ---
 
-## 💡 Our Solution
+##  Our Solution
 
 ShopIQ AI brings these comparisons into one interface.
 
@@ -40,11 +40,11 @@ The user searches for a product, and ShopIQ:
 
 ## ✨ Key Features
 
-### 🔎 Product Search
+###  Product Search
 
 Users can search for supported products using the search bar.
 
-### 💰 Price Comparison
+###  Price Comparison
 
 Compare prices across:
 
@@ -52,11 +52,11 @@ Compare prices across:
 - Flipkart
 - Croma
 
-### 💰 Best Price
+###  Best Price
 
 ShopIQ automatically identifies the cheapest available option.
 
-### 🏆 Best Overall
+###  Best Overall
 
 ShopIQ calculates an overall score using:
 
@@ -64,15 +64,15 @@ ShopIQ calculates an overall score using:
 - Rating
 - Delivery speed
 
-### 🤖 Gemini AI Explanation
+###  Gemini AI Explanation
 
 Gemini generates a natural-language explanation of why a particular product is recommended.
 
-### 📊 Decision Breakdown
+###  Decision Breakdown
 
 Users can see the individual scores used by the recommendation system.
 
-### 🔗 Buy Now
+###  Buy Now
 
 Each product includes a direct purchase link.
 
@@ -82,7 +82,7 @@ If a product is not available in the dataset, ShopIQ displays the supported prod
 
 ---
 
-## 🧠 How the Recommendation Works
+##  How the Recommendation Works
 
 ShopIQ uses a weighted scoring system.
 
@@ -104,7 +104,7 @@ The scoring system is intentionally explainable so users can understand why a pr
 
 ---
 
-## 🤖 Role of AI
+##  Role of AI
 
 The recommendation itself is calculated using a deterministic scoring algorithm.
 
@@ -112,7 +112,6 @@ Gemini AI is then used to generate a natural-language explanation based on the p
 
 ### Architecture
 
-```text
 User
  │
  ▼
