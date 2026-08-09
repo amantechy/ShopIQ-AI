@@ -111,7 +111,7 @@ The recommendation itself is calculated using a deterministic scoring algorithm.
 Gemini AI is then used to generate a natural-language explanation based on the product data and recommendation.
 
 ### Architecture
-
+'''text 
 User
  │
  ▼
@@ -134,13 +134,13 @@ Flask Backend
    AI Explanation
           │
           ▼
-      User
+      User 
 
 ### How to Run
 
 ### 1. Clone the repository
 
-bash
+'''bash
 git clone https://github.com/amantechy/ShopIQ-AI.git
 cd ShopIQ-AI
 
