@@ -136,3 +136,35 @@ Flask Backend
           │
           ▼
       User
+
+##⚙️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/amantechy/ShopIQ-AI.git
+cd ShopIQ-AI
+
+# set up the backend
+
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+## configure Gemini AI
+
+$env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+
+## Start the backend
+
+python app.py
+The backend will run at
+http://127.0.0.1:5000
+
+## Start the frontend
+cd frontend
+npm install
+npm run dev
+open the url shown by vite usually
+http://localhost:5173
