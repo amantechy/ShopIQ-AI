@@ -111,7 +111,7 @@ The recommendation itself is calculated using a deterministic scoring algorithm.
 Gemini AI is then used to generate a natural-language explanation based on the product data and recommendation.
 
 ### Architecture
-'''text 
+```text 
 User
  │
  ▼
@@ -134,7 +134,8 @@ Flask Backend
    AI Explanation
           │
           ▼
-      User 
+      User
+```
       
 
 ## ⚙️ How to Run
