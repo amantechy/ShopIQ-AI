@@ -163,8 +163,6 @@ Set your Gemini API key as an environment variable:
 $env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
 ```
 
-**Do not add your actual API key to GitHub.**
-
 ### 4. Start the backend
 
 ```powershell
