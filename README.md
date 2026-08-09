@@ -146,27 +146,49 @@ Flask Backend
 git clone https://github.com/amantechy/ShopIQ-AI.git
 cd ShopIQ-AI
 ```
+### 2. Set up the backend
 
-### Set up the backend
-
+```powershell
 cd backend
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-### configure Gemini AI
+### 3. Configure Gemini AI
 
+Set your Gemini API key as an environment variable:
+
+```powershell
 $env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+```
 
-### Start the backend
+**Do not add your actual API key to GitHub.**
 
+### 4. Start the backend
+
+```powershell
 python app.py
-The backend will run at
-http://127.0.0.1:5000
+```
 
-### Start the frontend
+The backend will run at:
+
+```text
+http://127.0.0.1:5000
+```
+
+### 5. Start the frontend
+
+Open a **second terminal**:
+
+```powershell
 cd frontend
 npm install
 npm run dev
-open the url shown by vite usually
+```
+
+Open the URL shown by Vite, usually:
+
+```text
 http://localhost:5173
+```
